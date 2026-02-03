@@ -9,4 +9,7 @@ export class CardComponent {
   @Input({ required: true }) cardImage: string = '';
   @Input({ required: true }) cardTitle: string = '';
   @Input() cardTitleValue: string = '';
+
+  @Input() cardLabel: string = '';
+  @Input() cardAmount: string = '';
 }
