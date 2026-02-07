@@ -18,5 +18,4 @@ export class AppComponent {
     { label: 'SALDO TOTAL', amount: 'R$ 1000,00' },
     { label: 'LIVRE PARA MOVIMENTAÇÃO', amount: 'R$ 1000,00' },
   ];
-
 }

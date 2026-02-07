@@ -5,16 +5,15 @@
         [cardImage]="'../assets/icons/icon-hand.png'"
         [cardTitle]="'Saldos Disponíveis'"
         [cardTitleValue]="'R$ 100,00'"
-        [cardLabel]="'Conta Corrente'"
-        [cardAmount]="'R$ 200,00'">
+      >
 
-        <div class="balance-card__content-item divider" *ngFor="let item of balanceItems">
+        <div class="content-item divider" *ngFor="let item of balanceItems">
           <p>{{ item.label }}</p>
           <p>{{ item.amount }}</p>
         </div>
 
         <div class="balance-card__content-summary">
-          <div class="balance-card__content-item" *ngFor="let item of balanceSummary">
+          <div class="content-item" *ngFor="let item of balanceSummary">
             <p>{{ item.label }}</p>
             <p>{{ item.amount }}</p>
           </div>
@@ -35,6 +34,10 @@
       <app-card
         [cardImage]="'../assets/icons/icon-debit-card.png'"
         [cardTitle]="'Cartão de débito'">
+
+        <div class="content-item">
+          <p>Este cliente não possui Cartão de Débito</p>
+        </div>
       </app-card>
     </div>
   </div>

@@ -13,21 +13,21 @@
 }
 
 .balance-card {
-  &__content-item {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-
-    > p:first-of-type {
-      margin-right: auto;
-    }
-  }
-
   &__content-summary {
     margin-top: 30px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0px 12px;
+  }
+}
+
+.content-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  > p:first-of-type {
+    margin-right: auto;
   }
 }
 
