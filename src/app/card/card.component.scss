@@ -37,13 +37,13 @@
     background-color: white;
   }
 
-  &__content-item {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+  // &__content-item {
+  //   display: flex;
+  //   align-items: center;
+  //   padding: 20px;
 
-    p:nth-of-type(1) {
-      margin-right: auto;
-    }
-  }
+  //   > p:first-of-type {
+  //     margin-right: auto;
+  //   }
+  // }
 }

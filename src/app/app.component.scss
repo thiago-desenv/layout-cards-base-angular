@@ -11,3 +11,27 @@
         padding: 10px;
     }
 }
+
+.balance-card {
+  &__content-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    > p:first-of-type {
+      margin-right: auto;
+    }
+  }
+
+  &__content-summary {
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 12px;
+  }
+}
+
+.divider {
+  border-bottom: 2px solid #9e9e9e;
+}
+

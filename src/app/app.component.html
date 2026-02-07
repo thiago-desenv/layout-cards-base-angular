@@ -1,22 +1,49 @@
 <div class="container">
   <div class="item">
     <div class="balance-card">
-      <app-card [cardImage]="'../assets/icons/icon-hand.png'" [cardTitle]="'Saldos Disponíveis'" [cardTitleValue]="'R$ 100,00'" [cardLabel]="'Conta Corrente'" [cardAmount]="'R$ 200,00'"></app-card>
+      <app-card
+        [cardImage]="'../assets/icons/icon-hand.png'"
+        [cardTitle]="'Saldos Disponíveis'"
+        [cardTitleValue]="'R$ 100,00'"
+        [cardLabel]="'Conta Corrente'"
+        [cardAmount]="'R$ 200,00'">
+
+        <div class="balance-card__content-item divider" *ngFor="let item of balanceItems">
+          <p>{{ item.label }}</p>
+          <p>{{ item.amount }}</p>
+        </div>
+
+        <div class="balance-card__content-summary">
+          <div class="balance-card__content-item" *ngFor="let item of balanceSummary">
+            <p>{{ item.label }}</p>
+            <p>{{ item.amount }}</p>
+          </div>
+        </div>
+      </app-card>
     </div>
   </div>
   <div class="item">
     <div class="credit-card">
-      <app-card [cardImage]="'../assets/icons/icon-credit-card.png'" [cardTitle]="'Cartão de Crédito'"></app-card>
+      <app-card
+        [cardImage]="'../assets/icons/icon-credit-card.png'"
+        [cardTitle]="'Cartão de Crédito'">
+      </app-card>
     </div>
   </div>
   <div class="item">
     <div class="debit-card">
-      <app-card [cardImage]="'../assets/icons/icon-debit-card.png'" [cardTitle]="'Cartão de débito'"></app-card>
+      <app-card
+        [cardImage]="'../assets/icons/icon-debit-card.png'"
+        [cardTitle]="'Cartão de débito'">
+      </app-card>
     </div>
   </div>
   <div class="item">
     <div class="client-infos-card">
-      <app-card [cardImage]="'../assets/icons/icon-client.png'" [cardTitle]="'Informações do Cliente'"></app-card>
+      <app-card
+        [cardImage]="'../assets/icons/icon-client.png'"
+        [cardTitle]="'Informações do Cliente'">
+      </app-card>
     </div>
   </div>
 </div>
