@@ -18,4 +18,15 @@ export class AppComponent {
     { label: 'SALDO TOTAL', amount: 'R$ 1000,00' },
     { label: 'LIVRE PARA MOVIMENTAÇÃO', amount: 'R$ 1000,00' },
   ];
+
+  creditItems = [
+    { label: 'Disponível', amount: 'R$ 1200,00' },
+    { label: 'Limite de Saque', amount: 'R$ 2000,00'},
+    { label: 'Disponível', amount: 'R$ 1300,00'},
+    { label: 'Limite Total Utilizado', amount: 'R$ 3000,00'},
+  ];
+
+  isDivider(index: number, last: boolean) {
+    return (index + 1) % 2 === 0 && !last;
+  }
 }

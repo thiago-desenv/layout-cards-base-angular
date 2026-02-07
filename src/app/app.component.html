@@ -26,6 +26,22 @@
       <app-card
         [cardImage]="'../assets/icons/icon-credit-card.png'"
         [cardTitle]="'Cartão de Crédito'">
+
+        <div class="content-item">
+          <p>123456789011 <br> Kuririn Teobaldo Cordeiro</p>
+          <p>MASTER CARD</p>
+        </div>
+        <div class="content-item divider">
+          <p>Limite de Compra</p>
+          <p>R$ 1000,00</p>
+        </div>
+
+        <div class="content-item"
+        *ngFor="let item of creditItems; let i = index; let last = last"
+        [class.divider]="isDivider(i, last)">
+          <p>{{ item.label }}</p>
+          <p>{{ item.amount }}</p>
+        </div>
       </app-card>
     </div>
   </div>
