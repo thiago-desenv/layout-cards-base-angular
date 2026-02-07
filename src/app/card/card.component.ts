@@ -10,6 +10,8 @@ export class CardComponent {
   @Input({ required: true }) cardTitle: string = '';
   @Input() cardTitleValue: string = '';
 
+  @Input() cardStyle: string = 'rgb(233, 129, 50)';
+
   @Input() cardLabel: string = '';
   @Input() cardAmount: string = '';
 }

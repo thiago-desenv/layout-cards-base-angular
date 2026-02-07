@@ -61,7 +61,13 @@
     <div class="client-infos-card">
       <app-card
         [cardImage]="'../assets/icons/icon-client.png'"
-        [cardTitle]="'Informações do Cliente'">
+        [cardTitle]="'Informações do Cliente'"
+        [cardStyle]="'#32e9da'">
+
+        <div class="content-item divider" *ngFor="let item of clientInfosItems">
+          <p>{{ item.label }}</p>
+          <p>{{ item.amount }}</p>
+        </div>
       </app-card>
     </div>
   </div>
